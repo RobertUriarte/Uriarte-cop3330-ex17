@@ -43,12 +43,11 @@ public class Exercise17 {
 
     public static double BAC(double weight, double alc_consumption, double hours, String gender){
         if(gender.compareTo("Male") == 0){
-            double BAC = (alc_consumption/5.14) / (weight*0.73) - (0.015*hours);
-            return BAC;
+            return (alc_consumption/5.14) / (weight*0.73) - (0.015*hours);
+
         }
         else{
-            double BAC2 = (alc_consumption/5.14) / (weight*0.66) - (0.015*hours);
-            return BAC2;
+            return (alc_consumption/5.14) / (weight*0.66) - (0.015*hours);
         }
     }
 }
